@@ -1,0 +1,64 @@
+@import url(../var.css);
+
+.sub-menu{
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sub-menu:hover {
+  color: var(--primaryColor);
+}
+
+.sub-menu:hover .arrow{
+  border-color: transparent transparent var(--primaryColor) transparent;
+}
+
+.sub-menu-open{
+  color: var(--primaryColor);
+}
+
+.sub-menu-open .arrow{
+  transform: rotate(180deg);
+  margin-top: 5px;
+  border-color: transparent transparent var(--primaryColor) transparent;
+}
+
+.arrow{
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: transparent transparent #999 transparent;
+  /* transform: rotate(90deg); */
+  transition: transform .5s;
+}
+
+.sub-list{
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.sub-list-hide{
+  height: 0;
+}
+
+.menu-item{
+  text-indent: 1em;
+  cursor: pointer;
+  line-height: 32px;
+  height: 32px;
+}
+
+.menu-item:hover{
+  color: var(--primaryColor);
+}
+
+.menu .selected{
+  color: var(--primaryColor);
+}
+
+.example{
+  margin-bottom: 20px;
+}
