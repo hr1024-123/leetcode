@@ -11,8 +11,7 @@ function run() {
     try {
       param = JSON.parse(paramString);
     } catch {
-      alert('数据有误');
-      return;
+      param = paramString;
     }
     if (params !== undefined) params.push(param);
   }
