@@ -7,6 +7,9 @@ import removeDuplicates from './remove-duplicates';
 import moveZero from './move-zero';
 import backspaceCompare from './backspace-compare';
 import sortedSquares from './sorted-squares';
+import minSubArray from './min-sub-array';
+import totalFruit from './total-fruit';
+import generateMatrix from './generate-matrix';
 
 const array = [
   binarySearch,
@@ -18,6 +21,9 @@ const array = [
   moveZero,
   backspaceCompare,
   sortedSquares,
+  minSubArray,
+  totalFruit,
+  generateMatrix,
 ];
 
 array.name = 'array';
